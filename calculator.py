@@ -31,7 +31,7 @@ def div(a, b):
 
 def logarithm(a, b):
     if a == 0:
-        raise ZeroDivisionError("cannot take log of 0")
+        raise ValueError("cannot take log of 0")
     return math.log(a, b)
 
 def exp(a, b):

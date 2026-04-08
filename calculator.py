@@ -30,11 +30,9 @@ def div(a, b):
 # raise ZeroDivisionError if a == 0
 
 def logarithm(a, b):
-    try:
-        return math.log(a, b)
-    except ValueError:
-        return "cannot take log of 0"
-    # use math library + raise ValueError
+    if a == 0:
+        raise ZeroDivisionError("cannot take log of 0")
+    return math.log(a, b)
 
 def exp(a, b):
     return a**b

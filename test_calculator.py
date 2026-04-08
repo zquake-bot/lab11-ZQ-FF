@@ -40,7 +40,7 @@ class TestCalculator(unittest.TestCase):
         self.assertTrue(logarithm(6, 7), math.log(6, 7))
     
     ######## Partner 1
-    def test_log_invalid_argument(self): # 1 assertion
+    def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
             logarithm(0, 5)
 

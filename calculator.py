@@ -4,6 +4,7 @@ calculator.py
 
 One function per operation, in order.
 """
+<<<<<<< HEAD
 
 import math
 
@@ -14,18 +15,35 @@ def square_root(a):
 def hypotenuse(a, b):
     return math.hypot(a, b)
 
+# First example
 def add(a, b): 
+    pass
+
+def add(a, b):
     return a + b
-def subtract(a, b):
+
+def sub(a, b):
     return a - b
-def multiply(a, b):
+
+def mul(a, b):
     return a * b
-def divide(a, b):
-    if a == 0:
-        raise ZeroDivisionError("Division by Zero")
-    return b / a
-def logarithm(a, b):
-    return math.log(a, b)
-def exponent(a, b):
+
+def div(a, b):
+    try:
+        b / a
+    except ZeroDivisionError:
+        "cannot divide by zero"
+# raise ZeroDivisionError if a == 0
+
+def log(a, b):
+    try:
+        math.log(a, b)
+    except ValueError:
+        "cannot take log of 0"
+    # use math library + raise ValueError
+
+def exp(a, b):
     return a**b
+
+>>>>>>> 6ebd36bc1dc67256d8f75e716c777a515c1db462
 

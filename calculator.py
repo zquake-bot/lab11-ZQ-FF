@@ -24,10 +24,9 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
-    try:
-        return b / a
-    except ZeroDivisionError:
-        return "cannot divide by zero"
+    if a == 0:
+        raise ZeroDivisionError("cannot divide by zero")
+    return b / a
 # raise ZeroDivisionError if a == 0
 
 def logarithm(a, b):

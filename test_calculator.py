@@ -18,7 +18,7 @@ class TestCalculator(unittest.TestCase):
         self.assertTrue(mul(0, -512) == 0)
 
     def test_divide(self): # 3 assertions
-        self.assertTrue(div(2, 1) == 0.5)
+        self.assertTrue(div(2, 4) == 2)
         self.assertTrue(div(6, -18) == -3)
         self.assertTrue(div(100, 100) == 1)
     # ##########################

@@ -27,14 +27,14 @@ def div(a, b):
     try:
         return b / a
     except ZeroDivisionError:
-        "cannot divide by zero"
+        return "cannot divide by zero"
 # raise ZeroDivisionError if a == 0
 
 def logarithm(a, b):
     try:
-        math.log(a, b)
+        return math.log(a, b)
     except ValueError:
-        "cannot take log of 0"
+        return "cannot take log of 0"
     # use math library + raise ValueError
 
 def exp(a, b):

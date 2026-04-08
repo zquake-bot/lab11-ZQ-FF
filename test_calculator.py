@@ -8,7 +8,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(add(4, 5), 4+5)
 
     def test_subtract(self): # 3 assertions
-        self.assertEqual(sub(7,3), 4)
+        self.assertEqual(subtract(7,3), 4)
     # ##########################
 
     ######## Partner 1
@@ -35,23 +35,14 @@ class TestCalculator(unittest.TestCase):
     #     fill in code
 
     def test_logarithm(self): # 3 assertions
-        self.assertEqual(log(1, 10), 0)
-        self.assertTrue(log(4, 5), math.log(4, 5))
-        self.assertTrue(log(6, 7), math.log(6, 7))
-
-
-    def test_log_invalid_base(self): # 1 assertion
-        with self.assertRaises(ValueError):
-            log(0, 10)
-
-    #     # use same technique from test_divide_by_zero
-    #     fill in code
-    # ##########################
+        self.assertEqual(logarithm(1, 10), 0)
+        self.assertTrue(logarithm(4, 5), math.log(4, 5))
+        self.assertTrue(logarithm(6, 7), math.log(6, 7))
     
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
         with self.assertRaises(ValueError):
-            log(0, 5)
+            logarithm(0, 5)
 
     def test_hypotenuse(self): # 3 assertions
         self.assertTrue(hypotenuse(2, 3) == 4)
